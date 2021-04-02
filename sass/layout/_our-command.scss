@@ -1,0 +1,93 @@
+.command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color: var(--background-command);
+
+    & > .title {
+    margin-bottom: 44px;
+}
+}
+
+.command-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+
+    &__frame {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+
+    background: var(--main-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+    &__worker {
+    margin-bottom: 10px;
+    font-family: var(--first-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--navigation-color);
+}
+    &__profession {
+    margin-bottom: 14px;
+    font-family: var(--first-font);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--tel-color);
+}
+
+    &__name {
+    padding: 30px;
+    width: 270px;
+}
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+
+    &__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+    &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
+    justify-content: center;
+    align-items: center;
+
+    transition: color var(--transition-animation), background-color var(--transition-animation);
+    
+}
+
+    &__link:hover,
+    &__link:focus {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+    &__team-icon {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    fill: currentColor;
+}
+}
+

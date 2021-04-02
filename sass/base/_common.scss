@@ -1,0 +1,44 @@
+body {
+    font-family: var(--first-font);
+    background: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.link.current {
+    color: var(--accent-color);
+}

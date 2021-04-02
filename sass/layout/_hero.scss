@@ -1,0 +1,54 @@
+.hero {
+    padding: 200px 0;
+    background-color: var(--background-hero);
+    background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.modal-button {
+    padding: 10px 32px;
+    display: block;
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    transition: background-color var(--transition-animation), box-shadow var(--transition-animation), border-radius var(--transition-animation), color var(--transition-animation);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    color: var(--main-color);
+    background: var(--accent-color);
+
+    &:hover,
+    &:focus {
+    background-color: var(--active-modal-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--main-color);
+}
+}
